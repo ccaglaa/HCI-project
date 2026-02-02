@@ -61,7 +61,7 @@
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-
+ 
 .col p {
   margin: 0.5rem 0;
   font-size: 1.1rem;
