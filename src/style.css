@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --bg-cream: #fdfbf7;       
+  --pop-pink: #ffb7b2;       
+  --pop-lime: #dbff76;       
+  --pop-blue: #4d5ef0;      
+  --pop-orange: #ffdac1;     
+  --text-dark: #2c2c2c;      
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace; 
+  font-weight: 700; 
+  letter-spacing: -1px; 
+}
+
+button, .btn, .role, .nav-link {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase; 
+  letter-spacing: -0.5px;
+}
