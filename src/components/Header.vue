@@ -9,6 +9,7 @@
     
     <nav class="nav-square">
       <a href="#interviews" class="nav-link">Interviews</a>
+      <a href="#interaction-points" class="nav-link">Interactions</a>
       <a href="#personas" class="nav-link">Personas</a>
       <a href="#scenarios" class="nav-link">Scenarios</a>
     </nav>

@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import Interactions from './Interactions.vue';
+import Personas from './Personas.vue';
+import Scenarios from './Scenarios.vue'
 
 const groupMembers = ref([
   {
@@ -108,17 +111,17 @@ const groupMembers = ref([
 
     <section id="interaction-points" class="placeholder-section">
       <h2>Interaction Points</h2>
-      <p>🚧 Coming soon: Analysis of our user interaction points.</p>
+      <Interactions />
     </section>
 
     <section id="personas" class="placeholder-section">
       <h2>Personas</h2>
-      <p>🚧 Coming soon: Detailed user personas.</p>
+      <Personas />
     </section>
 
     <section id="scenarios" class="placeholder-section">
       <h2>Scenarios</h2>
-      <p>🚧 Coming soon: User journey scenarios.</p>
+      <Scenarios />
     </section>
 
   </main>
