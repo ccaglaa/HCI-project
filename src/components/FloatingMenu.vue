@@ -8,10 +8,11 @@ const isOpen = ref(false)
 const menuItems = [
   { label: 'Top', id: '#app' },
   { label: 'Interviews', id: '#interviews' },
+  { label: 'Interactions', id: '#interactions' },
   { label: 'Personas', id: '#personas' },
   { label: 'Scenarios', id: '#scenarios' },
   { label: 'Brainstorm', id: '#corkboard' },
-  { label: 'Design Space', id: '#matrix' }
+  { label: 'Design Space', id: '#design-space' }
 ]
 
 const checkScroll = () => {

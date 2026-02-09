@@ -1,4 +1,10 @@
 <script setup>
+const scrollToSection = (id) => {
+  const element = document.querySelector(id)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 </script>
 
 <template>
@@ -8,11 +14,12 @@
     </div>
     
     <nav class="nav-square">
-      <a href="#interviews" class="nav-link">Interviews</a>
-      <a href="#interaction-points" class="nav-link">Interactions</a>
-      <a href="#personas" class="nav-link">Personas</a>
-      <a href="#scenarios" class="nav-link">Scenarios</a>
-      <a href="#brainstorming" class="nav-link">Brainstorming</a>
+      <a href="#interviews" @click.prevent="scrollToSection('#interviews')" class="nav-link">Interviews</a>
+      <a href="#interaction-points" @click.prevent="scrollToSection('#interaction-points')" class="nav-link">Interactions</a>
+      <a href="#personas" @click.prevent="scrollToSection('#personas')" class="nav-link">Personas</a>
+      <a href="#scenarios" @click.prevent="scrollToSection('#scenarios')" class="nav-link">Scenarios</a>
+      <a href="#corkboard" @click.prevent="scrollToSection('#corkboard')" class="nav-link">Brainstorming</a>
+      <a href="#design-space" @click.prevent="scrollToSection('#design-space')" class="nav-link">Design Space</a>
     </nav>
 
     </header>
@@ -23,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 1.5rem 2rem;
   background-color: transparent;
 }
@@ -55,6 +63,13 @@
   
   /* Hard shadow for the sticker/pop vibe */
   box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Ensure it doesn't get covered */
+  z-index: 6;
 }
 
 .nav-link {
@@ -64,6 +79,7 @@
   font-size: 0.9rem;
   position: relative;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
