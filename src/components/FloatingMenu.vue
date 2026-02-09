@@ -4,7 +4,6 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const isVisible = ref(false)
 const isOpen = ref(false)
 
-// Make sure these IDs match your sections in Main.vue!
 const menuItems = [
   { label: 'Top', id: '#app' },
   { label: 'Interviews', id: '#interviews' },
@@ -72,25 +71,17 @@ onUnmounted(() => { window.removeEventListener('scroll', checkScroll) })
   gap: 15px;
 }
 
-/* --- UPDATED BUTTON STYLE (Matches Header) --- */
 .fab-btn {
-  /* 1. Match the .nav-square background & border */
   background: white;
-  border: 1px solid var(--text-dark); /* Thin border */
-  border-radius: 8px; /* Square with slight round */
-  
-  /* 2. Match the .nav-square shadow */
+  border: 1px solid var(--text-dark); 
+  border-radius: 8px; 
   box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
-
-  /* 3. Match the Typography */
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.9rem;
   color: var(--text-dark);
-
-  /* Positioning */
-  padding: 12px 24px; /* Slightly wider */
+  padding: 12px 24px; 
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
@@ -98,28 +89,25 @@ onUnmounted(() => { window.removeEventListener('scroll', checkScroll) })
   justify-content: center;
 }
 
-/* Hover Effect */
 .fab-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0px rgba(0,0,0,0.15); /* Slightly deeper shadow */
-  color: var(--pop-blue); /* Blue text on hover like header */
+  box-shadow: 6px 6px 0px rgba(0,0,0,0.15); 
+  color: var(--pop-blue); 
   border-color: var(--pop-blue);
 }
 
-/* Active State (When menu is open) */
 .fab-btn.active {
   background: var(--text-dark);
   color: white;
-  box-shadow: none; /* Flat when open */
+  box-shadow: none; 
   border-color: var(--text-dark);
 }
 
-/* --- MENU LIST STYLING (Updated to match) --- */
 .menu-list {
   background: white;
-  border: 1px solid var(--text-dark); /* Thin border */
+  border: 1px solid var(--text-dark); 
   border-radius: 8px;
-  box-shadow: 4px 4px 0px rgba(0,0,0,0.1); /* Light shadow */
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -130,7 +118,7 @@ onUnmounted(() => { window.removeEventListener('scroll', checkScroll) })
 .menu-link {
   background: transparent;
   border: none;
-  font-family: 'Roboto Mono', monospace; /* Changed to Roboto to match header */
+  font-family: 'Roboto Mono', monospace; 
   font-size: 0.9rem;
   font-weight: 600;
   text-align: right;
@@ -147,7 +135,6 @@ onUnmounted(() => { window.removeEventListener('scroll', checkScroll) })
   text-decoration-thickness: 2px;
 }
 
-/* ANIMATIONS */
 .fade-enter-active, .fade-leave-active { transition: opacity 0.3s; }
 .fade-enter-from, .fade-leave-to { opacity: 0; }
 

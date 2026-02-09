@@ -1,5 +1,4 @@
 <script setup>
-// No logic needed yet, just vibes.
 </script>
 
 <template>

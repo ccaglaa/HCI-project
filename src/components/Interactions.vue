@@ -7,7 +7,7 @@ const scenarios = ref([
     title: "Impatience and Abandonment",
     icon: "〇",
     source: "Interview #4",
-    color: "#ffb7b2", // Pop Pink
+    color: "#ffb7b2", 
     panelA: { title: "Intent (Want)", text: "User feels insecure about a skin issue or is influenced by social media. They decide to start a routine to treat it." },
     panelB: { title: "Action (Clash)", text: "They apply it for a short period (1-2 weeks). The biological 'system' is slow and shows no immediate visible changes." },
     panelC: { title: "Result (Reaction)", text: "They lose patience, assuming it doesn't work. They stop using it, leaving the bottle unfinished and the problem unsolved." }
@@ -17,7 +17,7 @@ const scenarios = ref([
     title: "Routine while traveling",
     icon: "〇",
     source: "Interview #1 & #6",
-    color: "#dbff76", // Pop Lime
+    color: "#dbff76", 
     panelA: { title: "Intent (Want)", text: "User is packing for a flight and wants to maintain their skin health while traveling." },
     panelB: { title: "Action (Clash)", text: "Essential bottles are too large for carry-on limits. Decanting is too much effort or simply not possible." },
     panelC: { title: "Result (Reaction)", text: "Forced to leave products at home. Resorts to hotel soap or partner's product (wrong skin type), breaking the routine." }
@@ -27,7 +27,7 @@ const scenarios = ref([
     title: "Price vs Value",
     icon: "〇",
     source: "Interview #3 & #1",
-    color: "#4d5ef0", // Pop Blue
+    color: "#4d5ef0", 
     textColor: "white",
     panelA: { title: "Intent (Want)", text: "User sees a trending product (ex: Dior) on social media and feels the desire to buy it for the 'perfect' look." },
     panelB: { title: "Action (Clash)", text: "They check the price tag. The market 'system' creates a barrier that makes them question the investment." },
@@ -38,7 +38,7 @@ const scenarios = ref([
     title: "Distractions while Waiting",
     icon: "〇",
     source: "Interview #1",
-    color: "#ffdac1", // Pop Orange
+    color: "#ffdac1", 
     panelA: { title: "Intent (Want)", text: "User applies morning cream. Intends to follow the correct order: wash, cream, wait to dry, then sunscreen." },
     panelB: { title: "Action (Clash)", text: "Cream takes time to absorb. While waiting, the user leaves the bathroom to do something else due to hurry." },
     panelC: { title: "Result (Reaction)", text: "The distraction causes a memory lapse. They forget to return for sunscreen and leave unprotected." }
@@ -48,7 +48,7 @@ const scenarios = ref([
     title: "Speed over skin",
     icon: "〇",
     source: "Interview #4 & #5",
-    color: "#fdfbf7", // Cream
+    color: "#fdfbf7", 
     panelA: { title: "Intent (Want)", text: "User needs to shave facial hair quickly (under 5 mins) and wants to avoid mess." },
     panelB: { title: "Action (Clash)", text: "Uses razor without foam because previous products caused allergies. Shaves 'dry'." },
     panelC: { title: "Result (Reaction)", text: "Friction causes redness/irritation. They accept discomfort rather than adding a moisturizing step." }
@@ -58,7 +58,7 @@ const scenarios = ref([
     title: "Incompatible Layering",
     icon: "〇",
     source: "Interview #3",
-    color: "#ffb7b2", // Pink
+    color: "#ffb7b2", 
     panelA: { title: "Intent (Want)", text: "User wants to apply makeup over skincare to look natural and 'glowy'." },
     panelB: { title: "Action (Clash)", text: "Foundation applied over unabsorbed moisturizer. Products react chemically on the skin surface." },
     panelC: { title: "Result (Reaction)", text: "Makeup starts peeling or looking cakey. User frustrated, must wash face and restart entirely." }
@@ -68,7 +68,7 @@ const scenarios = ref([
     title: "Convenient Substitution",
     icon: "〇",
     source: "Interview #4 & #1",
-    color: "#dbff76", // Lime
+    color: "#dbff76", 
     panelA: { title: "Intent (Want)", text: "User feels dry or needs to wash, but has not invested effort in buying their own products." },
     panelB: { title: "Action (Clash)", text: "Instead of shopping, they 'steal' a pump of lotion from their partner's bottle on the shelf." },
     panelC: { title: "Result (Reaction)", text: "Uses product not designed for their skin type, but satisfied because it solved the problem with zero effort." }
@@ -78,7 +78,7 @@ const scenarios = ref([
     title: "Indirect Influence",
     icon: "〇",
     source: "Interview #6",
-    color: "#4d5ef0", // Blue
+    color: "#4d5ef0", 
     textColor: "white",
     panelA: { title: "Intent (Want)", text: "User needs a new skincare product but doesn't know what to choose." },
     panelB: { title: "Action (Clash)", text: "Instead of researching, they ask Mom. Mom gets her info from social media algorithms." },
@@ -154,12 +154,11 @@ h2 {
   color: #666;
 }
 
-/* STORYBOARD CARD */
 .storyboard-card {
   border: 3px solid var(--text-dark);
   border-radius: 12px;
   background: white;
-  box-shadow: 8px 8px 0px rgba(0,0,0,0.1); /* Deep shadow */
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.1); 
   margin-bottom: 3rem;
   overflow: hidden;
   transition: transform 0.2s;
@@ -170,7 +169,6 @@ h2 {
   box-shadow: 10px 10px 0px var(--text-dark);
 }
 
-/* HEADER */
 .card-header {
   padding: 1rem 1.5rem;
   border-bottom: 3px solid var(--text-dark);
@@ -205,15 +203,14 @@ h2 {
   border-radius: 20px;
 }
 
-/* COMIC STRIP LAYOUT */
 .comic-strip {
-  display: flex; /* Horizontal layout */
+  display: flex; 
   align-items: stretch;
   padding: 0;
 }
 
 .panel {
-  flex: 1; /* Each panel takes equal width */
+  flex: 1; 
   padding: 2rem;
   position: relative;
   background-image: radial-gradient(#ddd 1px, transparent 1px); /* Comic paper dots */
@@ -239,7 +236,6 @@ h2 {
   margin: 0;
 }
 
-/* ARROWS BETWEEN PANELS */
 .arrow {
   display: flex;
   align-items: center;
@@ -253,7 +249,6 @@ h2 {
   font-weight: bold;
 }
 
-/* RESPONSIVE: Stack them on mobile */
 @media (max-width: 768px) {
   .comic-strip {
     flex-direction: column;
@@ -266,7 +261,7 @@ h2 {
     border-right: none;
     border-top: 3px solid var(--text-dark);
     border-bottom: 3px solid var(--text-dark);
-    transform: rotate(90deg); /* Point down */
+    transform: rotate(90deg); 
   }
 
   .card-header {

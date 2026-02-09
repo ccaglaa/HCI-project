@@ -1,9 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-// --- PART 1: THE BRAINSTORM WALL ---
-// Add your images here! 
-// If you don't have an image, just leave the 'img' field empty and use 'title'.
 const rawNotes = [
   { img: "brainstorm/note1.jpeg", tags: ['least'] },
   { img: "brainstorm/note2.jpeg", tags: ['least'] },
@@ -32,8 +29,6 @@ const rawNotes = [
   { img: "brainstorm/note25.jpeg", tags: [] },
   { img: "brainstorm/note26.jpeg", tags: [] },
   { img: "brainstorm/note27.jpeg", tags: [] },
-  
-  // You can still use text-only notes if you run out of pictures!
   // { title: "Extra Idea", desc: "Text fallback", tags: [] }, 
 ]
 
@@ -42,11 +37,10 @@ const brainstormNotes = ref([])
 onMounted(() => {
   brainstormNotes.value = rawNotes.map(note => ({
     ...note,
-    rotation: Math.random() * 6 - 3, // Random rotation (-3 to +3 deg)
+    rotation: Math.random() * 6 - 3, 
   }))
 })
 
-// --- PART 2: THE FINALISTS (Matrix) ---
 const finalists = ref([
   { id: 1, text: "Smart Mirror", x: 80, y: 20 },
   { id: 2, text: "AI Stylist App", x: 90, y: 90 },
@@ -125,7 +119,7 @@ const finalists = ref([
 
 <style scoped>
 .page-container {
-  background-color: white; /* Pure White Background */
+  background-color: white; 
   color: var(--text-dark);
   padding-bottom: 4rem;
 }
@@ -146,7 +140,6 @@ h2 {
   color: #666;
 }
 
-/* --- PHOTO WALL STYLES --- */
 .legend {
   display: flex;
   justify-content: center;
@@ -169,14 +162,12 @@ h2 {
   margin: 0 auto;
 }
 
-/* THE STICKY ITEM CONTAINER */
 .sticky-item {
   width: 180px;
   height: 180px;
   position: relative;
   transition: transform 0.2s ease;
   
-  /* Default styling for TEXT notes */
   background-color: #fff475;
   border: 3px solid var(--text-dark);
   box-shadow: 6px 6px 0px rgba(0,0,0,1);
@@ -187,18 +178,17 @@ h2 {
   padding: 1rem;
 }
 
-/* SPECIAL STYLING IF IT'S A PHOTO */
 .sticky-item.is-photo {
-  background: white; /* Photo frame color */
-  padding: 5px; /* Small white border like a polaroid */
-  border: 1px solid #ccc; /* Subtle border for photos */
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.3); /* Softer shadow for photos */
+  background: white; 
+  padding: 5px; 
+  border: 1px solid #ccc; 
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3); 
 }
 
 .note-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures square crop */
+  object-fit: cover; 
   display: block;
 }
 
@@ -208,7 +198,6 @@ h2 {
   box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
 }
 
-/* TAPES & DOTS (Overlay) */
 .washi-tape {
   position: absolute;
   width: 50px;
@@ -216,13 +205,12 @@ h2 {
   top: -6px; 
   opacity: 0.9;
   mix-blend-mode: multiply;
-  z-index: 5; /* Sit on top of photo */
+  z-index: 5; 
 }
 .red-tape { background-color: #ff5e5e; left: 10px; transform: rotate(-3deg); }
 .green-tape { background-color: #5eff80; right: 10px; transform: rotate(4deg); }
 .blue-dot { position: absolute; bottom: 10px; right: 10px; width: 15px; height: 15px; background-color: #5e80ff; border-radius: 50%; border: 2px solid white; z-index: 5; }
 
-/* --- MATRIX STYLES --- */
 .matrix-section {
   background: white;
   padding-bottom: 5rem;

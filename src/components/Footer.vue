@@ -34,7 +34,7 @@
 <style scoped>
 .site-footer {
   margin-top: 4rem;
-  background-color: var(--pop-blue); /* The bold blue from Truus */
+  background-color: var(--pop-blue); 
   color: white;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -67,10 +67,9 @@
   font-size: 1.1rem;
 }
 
-/* The Giant Text */
 .big-text {
   font-family: 'Patrick Hand', cursive;
-  font-size: clamp(3rem, 10vw, 8rem); /* Responsive giant text */
+  font-size: clamp(3rem, 10vw, 8rem); 
   text-align: center;
   line-height: 0.9;
   opacity: 0.9;

@@ -35,11 +35,10 @@ const scrollToSection = (id) => {
   background-color: transparent;
 }
 
-/* LOGO: Bold and Strong (Roboto Mono) */
 .logo {
-  font-family: 'Roboto Mono', monospace; /* The strong previous font */
+  font-family: 'Roboto Mono', monospace; 
   font-size: 1.5rem;
-  font-weight: 700; /* Extra Bold */
+  font-weight: 700; 
   text-transform: uppercase;
   color: var(--text-dark);
   cursor: pointer;
@@ -50,25 +49,17 @@ const scrollToSection = (id) => {
   color: var(--pop-blue);
 }
 
-/* MENU: Square style instead of round pill */
 .nav-square {
   display: flex;
-  gap: 2rem; /* More space between links */
+  gap: 2rem; 
   background: white;
   padding: 0.8rem 2rem;
-  
-  /* The "Square" look (same as the old contact button) */
   border-radius: 8px; 
   border: 1px solid var(--text-dark);
-  
-  /* Hard shadow for the sticker/pop vibe */
   box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
-
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  
-  /* Ensure it doesn't get covered */
   z-index: 6;
 }
 

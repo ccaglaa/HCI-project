@@ -146,18 +146,16 @@ const groupMembers = ref([
   padding: 2rem;
 }
 
-/* Fun Section Headers */
 h2 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
-  border-bottom: none; /* Remove the old line */
+  border-bottom: none; 
   position: relative;
   display: inline-block;
   width: 100%;
 }
 
-/* The squiggle underline effect */
 h2::after {
   content: "";
   display: block;
@@ -177,18 +175,16 @@ h2::after {
   gap: 2.5rem;
 }
 
-/* THE STICKER CARD LOOK */
 .member-card {
   background: white;
   border: 2px solid var(--text-dark);
-  border-radius: 20px; /* Big rounded corners */
+  border-radius: 20px; 
   padding: 1.5rem;
-  box-shadow: 6px 6px 0px var(--text-dark); /* Hard drop shadow like a sticker */
+  box-shadow: 6px 6px 0px var(--text-dark); 
   transition: transform 0.2s;
   position: relative;
 }
 
-/* Rotate every other card slightly for that "messy desk" look */
 .member-card:nth-child(even) {
   transform: rotate(2deg);
 }
@@ -198,10 +194,8 @@ h2::after {
 
 .member-card:hover {
   transform: rotate(0deg) scale(1.02);
-  z-index: 10; /* Bring to front on hover */
 }
 
-/* Assign different colors to different cards (simulating the sticky notes) */
 .member-card:nth-child(4n+1) { background-color: var(--pop-pink); }
 .member-card:nth-child(4n+2) { background-color: var(--pop-blue); }
 .member-card:nth-child(4n+3) { background-color: var(--pop-lime); }
@@ -221,7 +215,6 @@ h2::after {
   font-weight: bold;
 }
 
-/* INTERVIEW BUTTONS - Clean white pills to contrast with colorful cards */
 .interview-item {
   display: flex;
   align-items: center;
@@ -242,7 +235,6 @@ h2::after {
   transform: scale(1.05);
 }
 
-/* Placeholders with dashed lines */
 .placeholder-section {
   background: white;
   padding: 3rem;

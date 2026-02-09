@@ -10,19 +10,19 @@ const episodes = ref([
     reactions: [
       {
         name: "Emily",
-        color: "#ffb7b2", // Pink
+        color: "#ffb7b2", 
         action: "Realizes she has the specific problem mentioned in the post.",
         outcome: "Immediately starts researching ingredients and reviews."
       },
       {
         name: "Thomas",
-        color: "#a0c4ff", // Blue
+        color: "#a0c4ff", 
         action: "Partner shows him the post to influence him.",
         outcome: "He ignores it. 'Too many steps.' Not interested in adding complexity."
       },
       {
         name: "Nara",
-        color: "#bdb2ff", // Purple
+        color: "#bdb2ff", 
         action: "Realizes she already received this product in PR but never opened it.",
         outcome: "Sparked interest. Digs it out of her stash to use immediately."
       }
@@ -116,7 +116,6 @@ h2 {
   color: #b1aeae;
 }
 
-/* EPISODE BLOCK */
 .episode-block {
   margin-bottom: 5rem;
   border: 3px solid var(--text-dark);
@@ -124,9 +123,8 @@ h2 {
   box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
 }
 
-/* HEADER (CONTEXT) */
 .episode-header {
-  background: var(--bg-cream); /* Or a light gray */
+  background: var(--bg-cream); 
   padding: 2rem;
   border-bottom: 3px solid var(--text-dark);
 }
@@ -164,7 +162,6 @@ h2 {
   max-width: 800px;
 }
 
-/* REACTION GRID (3 Columns) */
 .reaction-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -179,12 +176,11 @@ h2 {
   border-right: none;
 }
 
-/* INDIVIDUAL CARDS */
 .reaction-card {
   padding: 1.5rem;
   position: relative;
   background: white;
-  border-top: 6px solid transparent; /* Colored line at top */
+  border-top: 6px solid transparent; 
 }
 
 .persona-name {
@@ -213,7 +209,6 @@ h2 {
   border-radius: 4px;
 }
 
-/* RESPONSIVE: Stack on Mobile */
 @media (max-width: 768px) {
   .reaction-grid {
     grid-template-columns: 1fr;
