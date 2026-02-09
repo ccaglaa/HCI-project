@@ -12,6 +12,7 @@
       <a href="#interaction-points" class="nav-link">Interactions</a>
       <a href="#personas" class="nav-link">Personas</a>
       <a href="#scenarios" class="nav-link">Scenarios</a>
+      <a href="#brainstorming" class="nav-link">Brainstorming</a>
     </nav>
 
     </header>
