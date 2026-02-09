@@ -10,7 +10,7 @@ const scrollToSection = (id) => {
 <template>
   <header class="site-header">
     <div class="logo">
-      HCI Project <span><img src="/trace.svg"></span>
+      HCI Project <span><img src="/logo.svg"></span>
     </div>
     
     <nav class="nav-square">
