@@ -10,7 +10,7 @@ const scrollToSection = (id) => {
 <template>
   <header class="site-header">
     <div class="logo">
-      HCI Project <span>:)</span>
+      HCI Project <span><img src="/trace.svg"></span>
     </div>
     
     <nav class="nav-square">
@@ -43,6 +43,15 @@ const scrollToSection = (id) => {
   color: var(--text-dark);
   cursor: pointer;
   letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px; 
+  width: auto;   
+  display: block;
 }
 
 .logo span {
