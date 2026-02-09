@@ -18,7 +18,7 @@ We aim to observe the gap between complex routines and low effort realities (fat
 
 # The process 
 
-### 1. User research 
+### 1. User research 
 We conducted interviews with 6 different people of varying ages (15–54) and nationalities (French, Turkish, Romanian, Lithuanian, Chinese). The goal was to understand their current skincare habits, frustrations, and motivations, ranging from elaborate multiple step rituals to minimal or non existent routines. 
 
 ### 2. Interaction Points 
