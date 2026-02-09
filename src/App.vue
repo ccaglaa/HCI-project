@@ -2,6 +2,7 @@
 import Main from './components/Main.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import FloatingMenu from './components/FloatingMenu.vue';
 
 </script>
 
@@ -9,6 +10,7 @@ import Footer from './components/Footer.vue'
   <Header />
   <Main />
   <Footer />
+  <FloatingMenu />
 </template>
 
 <style scoped>
