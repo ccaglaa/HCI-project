@@ -11,7 +11,8 @@ const menuItems = [
   { label: 'Personas', id: '#personas' },
   { label: 'Scenarios', id: '#scenarios' },
   { label: 'Brainstorm', id: '#corkboard' },
-  { label: 'Design Space', id: '#design-space' }
+  { label: 'Design Space', id: '#design-space' }, 
+  { label: 'Prototype', id: '#prototype' }
 ]
 
 const checkScroll = () => {

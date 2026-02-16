@@ -20,6 +20,7 @@ const scrollToSection = (id) => {
       <a href="#scenarios" @click.prevent="scrollToSection('#scenarios')" class="nav-link">Scenarios</a>
       <a href="#corkboard" @click.prevent="scrollToSection('#corkboard')" class="nav-link">Brainstorming</a>
       <a href="#design-space" @click.prevent="scrollToSection('#design-space')" class="nav-link">Design Space</a>
+      <a href="#prototype" @click.prevent="scrollToSection('#prototype')" class="nav-link">Prototype</a>
     </nav>
 
     </header>
@@ -67,7 +68,7 @@ const scrollToSection = (id) => {
   border: 1px solid var(--text-dark);
   box-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
   position: absolute;
-  left: 50%;
+  left: 51%;
   transform: translateX(-50%);
   z-index: 6;
 }

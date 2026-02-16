@@ -5,6 +5,7 @@ import Personas from './Personas.vue';
 import Scenarios from './Scenarios.vue'
 import Brainstorming from './Brainstorming.vue';
 import DesignSpace from './DesignSpace.vue';
+import Prototype from './Prototype.vue';
 
 const groupMembers = ref([
   {
@@ -135,6 +136,12 @@ const groupMembers = ref([
       <h2>Design Space</h2>
       <DesignSpace />
     </section>
+
+    <section id="prototype" class="placeholder-section">
+      <h2>Prototype</h2>
+      <Prototype />
+    </section>
+
 
   </main>
 </template>
