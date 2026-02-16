@@ -7,14 +7,12 @@ const rawNotes = [
   { img: "brainstorm/note3.jpeg", tags: ['sub'] },
   { img: "brainstorm/note4.jpeg", tags: ['least'] },
   { img: "brainstorm/note5.jpeg", tags: ['least'] },
-  { img: "brainstorm/note6.jpeg", tags: [] },
   { img: "brainstorm/note7.jpeg", tags: [] },
   { img: "brainstorm/note8.jpeg", tags: ['most'] },
   { img: "brainstorm/note9.jpeg", tags: ['most'] },
   { img: "brainstorm/note10.jpeg", tags: ['most'] },
   { img: "brainstorm/note11.jpeg", tags: ['most'] },
   { img: "brainstorm/note12.jpeg", tags: [] },
-  { img: "brainstorm/note13.jpeg", tags: ['most'] },
   { img: "brainstorm/note14.jpeg", tags: [] },
   { img: "brainstorm/note15.jpeg", tags: [] },
   { img: "brainstorm/note16.jpeg", tags: [] },
@@ -34,14 +32,23 @@ const rawNotes = [
   { img: "brainstorm/note30.jpeg", tags: [] },
   { img: "brainstorm/note31.jpeg", tags: [] },
   { img: "brainstorm/note32.jpeg", tags: [] },
-  { img: "brainstorm/note33.jpeg", tags: [] },
   { img: "brainstorm/note34.jpeg", tags: [] },
   { img: "brainstorm/note35.jpeg", tags: [] },
   { img: "brainstorm/note36.jpeg", tags: [] },
   { img: "brainstorm/note37.jpeg", tags: [] },
-  //{ img: "brainstorm/note38.jpeg", tags: [] },
-  //{ img: "brainstorm/note39.jpeg", tags: [] },
-  //{ img: "brainstorm/note40.jpeg", tags: [] },
+  { img: "brainstorm/note38.jpeg", tags: [] },
+  { img: "brainstorm/note39.jpeg", tags: [] },
+  { img: "brainstorm/note40.jpeg", tags: [] },
+  { img: "brainstorm/note41.jpeg", tags: [] },
+  { img: "brainstorm/note42.jpeg", tags: [] },
+  { img: "brainstorm/note43.jpeg", tags: [] },
+  { img: "brainstorm/note44.jpeg", tags: [] },
+  { img: "brainstorm/note45.jpeg", tags: [] },
+  { img: "brainstorm/note46.jpeg", tags: [] },
+  { img: "brainstorm/note47.jpeg", tags: [] },
+  { img: "brainstorm/note48.jpeg", tags: [] },
+  { img: "brainstorm/note50.jpeg", tags: [] },
+  { img: "brainstorm/note51.jpeg", tags: [] },
   // { title: "Extra Idea", desc: "Text fallback", tags: [] }, 
 ]
 
@@ -166,12 +173,12 @@ h2 {
 .dot-sample { width: 10px; height: 10px; border-radius: 50%; background: #5e80ff; display: block; border: 1px solid black; }
 
 .notes-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;                          /* Changed from flex */
+  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -206,7 +213,7 @@ h2 {
 }
 
 .sticky-item:hover {
-  transform: scale(1.1) rotate(0deg) !important;
+  transform: scale(1.4) rotate(0deg) !important;
   z-index: 10;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
 }
