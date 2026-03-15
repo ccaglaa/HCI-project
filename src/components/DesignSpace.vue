@@ -3,7 +3,7 @@
 
 <template>
   <section id="design-space" class="construction-section">
-    <p>Coming soon</p>
+    <img src="/public/design_space.png" alt="Construction design space" />
   </section>
 </template>
 
@@ -16,6 +16,13 @@
   overflow: hidden;
 }
 
+/* Add this new block specifically for your image */
+.construction-section img {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain;
+}
+
 .content-box {
   max-width: 600px;
   margin: 0 auto;
@@ -24,5 +31,4 @@
   align-items: center;
   gap: 1rem;
 }
-
 </style>
