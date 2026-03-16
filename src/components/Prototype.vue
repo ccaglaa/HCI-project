@@ -18,6 +18,19 @@
         ></iframe>
 
       </div>
+
+
+      <div class="video-frame">
+        <iframe 
+          class="youtube-embed"
+          src="https://www.youtube.com/embed/k07a9YHKA5k?si=0bwTpqT49FAUdkeP"
+          title="Prototype Video 2"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen
+        ></iframe>
+      </div>
       
       <div class="decorative-blob"></div>
     </div>
