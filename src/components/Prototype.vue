@@ -9,7 +9,7 @@
         
         <iframe 
           class="youtube-embed"
-          src="https://www.youtube.com/embed/kB6fvV9ofP8?modestbranding=1&rel=0" 
+          src="https://www.youtube.com/embed/-gr6lAo_pAs?si=y5SFBBN-BOb3_bws"
           title="Prototype Video"
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
