@@ -4,6 +4,7 @@
 <template>
   <section id="design-space" class="construction-section">
     <img src="/public/design_space.png" alt="Construction design space" />
+    <img src="/public/design_space2.png" alt="Construction design space" />
   </section>
 </template>
 

@@ -6,6 +6,7 @@ import Scenarios from './Scenarios.vue'
 import Brainstorming from './Brainstorming.vue';
 import DesignSpace from './DesignSpace.vue';
 import Prototype from './Prototype.vue';
+import Evaluation from './Evaluation.vue';
 
 const groupMembers = ref([
   {
@@ -142,6 +143,10 @@ const groupMembers = ref([
       <Prototype />
     </section>
 
+    <section id="evaluation" class="placeholder-section">
+      <h2>Evaluation</h2>
+      <Evaluation />
+    </section>
 
   </main>
 </template>

@@ -21,6 +21,7 @@ const scrollToSection = (id) => {
       <a href="#corkboard" @click.prevent="scrollToSection('#corkboard')" class="nav-link">Brainstorming</a>
       <a href="#design-space" @click.prevent="scrollToSection('#design-space')" class="nav-link">Design Space</a>
       <a href="#prototype" @click.prevent="scrollToSection('#prototype')" class="nav-link">Prototype</a>
+      <a href="#evaluation" @click.prevent="scrollToSection('#evaluation')" class="nav-link">Evaluation</a>
     </nav>
 
     </header>
